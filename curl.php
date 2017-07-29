@@ -5,7 +5,7 @@
 	$post = [];
 	//设置变量
 	curl_setopt($ch, CURLOPT_URL, $url);
-	// 禁用后cURL将终止从服务端进行验证
+	// 禁用后CURL将终止从服务端进行验证
 	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
 	//关闭证书检测
 	curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
