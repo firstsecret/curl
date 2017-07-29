@@ -12,7 +12,7 @@
 	//关闭头文件的信息作为数据流输出
 	curl_setopt($ch, CURLOPT_HEADER, FALSE);
 	//是否是post请求判断
-	if(!empty($data))
+	if(!empty($post))
 	{
 		curl_setopt($ch, CURLOPT_POST, 1);
 		curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
