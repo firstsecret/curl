@@ -28,7 +28,7 @@
 	var_dump($match_res);
 	//获取图片的src
 	$res_img = preg_match_all('/<img.*?src=[\"|\']?(.*?)[\"|\']?\s.*?>/i',$data,$match_res);
-	echo '图片的src';
+	echo '<h1>图片的src</h1>','<br>';
 	var_dump($match_res[1]);
 	curl_close($ch);
 	// echo $data;	
